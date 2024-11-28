@@ -43,14 +43,14 @@ public class Anagram {
 		str1 = preProcess(str1);
         str2 = preProcess(str2);
 
-        if (str2.length() != str2.length()) {
+        if (str1.length() != str2.length()) {
             return false;
         }
 
    
         for (char c : str1.toCharArray()) {
             int count1 = count_char(str1, c);
-            int count2 = count_char(str1, c);
+            int count2 = count_char(str2, c);
 
             if (count1 != count2) {
                 return false; 
